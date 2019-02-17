@@ -21,9 +21,6 @@ html {
       margin-bottom: 10px;
   }
 
-  img {
-      max-width: 100%;
-  }
   .main-content {
       display: flex;
       flex-wrap: wrap;
@@ -35,9 +32,10 @@ html {
         flex: 0 0 calc(50% - 1rem);
     }
   }
-  /* .article img {
-          width: 100%;
-  } */
+
+  article img {
+    max-width: 100%;
+  }
 
 
 
