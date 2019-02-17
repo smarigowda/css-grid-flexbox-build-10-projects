@@ -11,7 +11,7 @@ html {
   }
 
   .container {
-      width: 1200px;
+      max-width: 1200px;
       margin: 0 auto;
   }
 
@@ -33,9 +33,14 @@ html {
     }
   }
 
-  article img {
-    max-width: 100%;
+  @media (min-width: 768px) {
+    .entry {
+        flex: 0 0 calc(33.33% - 1rem);
+    }
   }
 
-
-
+  article img {
+    max-width: 100%;
+    display: block;
+    border-radius: 4px;
+  }
