@@ -31,6 +31,7 @@ html {
     cursor: pointer;
     color: var(--white);
     letter-spacing: 3px;
+    font-family: var(--mainFont);
 }
 .hero-content .button:hover {
     background-color: rgb(1, 123, 136);
@@ -54,6 +55,13 @@ html {
     text-decoration: none;
     margin-bottom: 1.4rem;
     color: var(--dark);
+}
+
+.hero-content h1 {
+    font-family: var(--mainFont);
+}
+.hero-content p {
+    font-family: var(--mainFont);
 }
 
 @media (min-width: 768px) {
@@ -91,9 +99,11 @@ html {
 
 .hero-content p {
     font-size: 1.5rem;
+    text-align: top;
 }
 
 .hero-content svg {
+    font-size: 2.5rem;
     margin-right: 10px;
     color: var(--primary);
 }
@@ -109,3 +119,7 @@ html {
     right: 0;
 }
 
+.fl-name {
+    display: flex;
+    align-items: center;
+}
