@@ -3,6 +3,7 @@
     --dark: #212121;
     --mainFont: 'Krub', sans-serif;
     --secondary: #0097A7;
+    --primary: #FFC107;
 }
 
 html {
@@ -90,6 +91,11 @@ html {
 
 .hero-content p {
     font-size: 1.5rem;
+}
+
+.hero-content svg {
+    margin-right: 10px;
+    color: var(--primary);
 }
 
 .hero::after {
