@@ -36,21 +36,26 @@ nav ul li:hover {
 nav ul a {
     color: white;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
 }
 
 .simple ul {
     display: flex;
     flex-direction: column;
+    
+    /* grow does not work */
     /* align-items: center; */
+
     /* justify-content: center; */
     /* justify-content: space-around; */
-    /* text-align: center; */
+    text-align: center;
+}
 
+.simple ul li:not(:last-of-type) {
+    margin-bottom: 20px;
 }
 
 .simple ul li {
-    margin-bottom: 20px;
     flex: 1;
     /* justify-content does not work if we set it to grow */
 }
@@ -62,7 +67,11 @@ nav ul a {
         /* justify-content: flex-start; */
         justify-content: flex-end;
     }
-    .simple ul li {
+    .simple ul li:not(:last-of-type) {
         margin-bottom: 0;
+    }
+
+    nav ul a {
+        font-size: 1.1rem;
     }
 }
