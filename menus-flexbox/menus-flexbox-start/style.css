@@ -75,3 +75,45 @@ nav ul a {
         font-size: 1.1rem;
     }
 }
+
+/* menu with icons */
+
+/* @media screen and (min-width: 768px) {
+    .icons ul li {
+        display: flex;
+    }
+} */
+
+/* @media screen and (min-width: 480px) {
+    .icons ul {
+        display: flex;
+    }
+} */
+
+/* .icons ul li a {
+    display: flex;
+    justify-content: center;
+} */
+
+.icons ul {
+    display: flex;
+}
+
+.icons ul li {
+    /* all 4 elements will have the same width */
+    flex: 1;
+}
+
+.icons ul li a {
+    display: flex;
+}
+
+.icons .icon {
+    font-size: 2rem;
+    flex: 0 0 3rem;
+}
+
+.icons .text span {
+    font-size: .8rem;
+    display: flex;
+}
