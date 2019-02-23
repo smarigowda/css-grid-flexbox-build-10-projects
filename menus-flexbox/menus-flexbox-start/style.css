@@ -116,4 +116,5 @@ nav ul a {
 .icons .text span {
     font-size: .8rem;
     display: flex;
+    margin-top: .5rem;
 }
