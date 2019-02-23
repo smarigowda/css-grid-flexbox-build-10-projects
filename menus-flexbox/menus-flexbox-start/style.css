@@ -97,15 +97,31 @@ nav ul a {
 
 .icons ul {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 .icons ul li {
     /* all 4 elements will have the same width */
     flex: 1;
+    flex: 0 0 100%;
+}
+
+@media (min-width: 480px) {
+    .icons ul li {
+        flex: 0 0 calc(50%);
+    }
+}
+
+@media (min-width: 768px) {
+    .icons ul li {
+        flex: 0 0 calc(25%);
+    }
 }
 
 .icons ul li a {
     display: flex;
+    justify-content: center;
 }
 
 .icons .icon {
