@@ -39,6 +39,10 @@ nav ul a {
     font-size: 1.5rem;
 }
 
+/* ---------------------------- */
+
+/* Simple Navigation */
+
 .simple ul {
     display: flex;
     flex-direction: column;
@@ -76,24 +80,7 @@ nav ul a {
     }
 }
 
-/* menu with icons */
-
-/* @media screen and (min-width: 768px) {
-    .icons ul li {
-        display: flex;
-    }
-} */
-
-/* @media screen and (min-width: 480px) {
-    .icons ul {
-        display: flex;
-    }
-} */
-
-/* .icons ul li a {
-    display: flex;
-    justify-content: center;
-} */
+/* Menu with Icons Navigation */
 
 .icons ul {
     display: flex;
@@ -134,3 +121,53 @@ nav ul a {
     display: flex;
     margin-top: .5rem;
 }
+
+
+/* Drop Down Menu Navigation */
+
+.dropdown ul {
+    display: flex;
+    flex-direction: column;
+}
+.dropdown ul li ul {
+    display: none;
+}
+
+.dropdown ul li:hover ul {
+    margin-top: 1rem;
+    display: flex;
+}
+
+.dropdown ul li ul li:hover {
+    background-color: #ff5e62;
+}
+
+@media (min-width: 768px) {
+    .dropdown ul {
+        flex-direction: row;
+    }
+    .dropdown ul li {
+        display: flex;
+        position: relative;
+        flex: 1 1 100%;
+    }
+    .dropdown ul li ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        background-color: #ff5e62;
+    }
+
+    .dropdown ul li ul li:hover {
+        background-color: #1a2770;
+    }   
+    
+    .dropdown ul li:hover ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+}
+
+
