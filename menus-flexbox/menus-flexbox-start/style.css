@@ -125,7 +125,7 @@ nav ul a {
 
 /* Drop Down Menu Navigation */
 
-.dropdown ul {
+/* .dropdown ul {
     display: flex;
     flex-direction: column;
 }
@@ -167,6 +167,42 @@ nav ul a {
         display: flex;
         flex-wrap: wrap;
         margin-top: 0;
+    }
+} */
+
+.main-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-menu__item:first-of-type {
+    margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+    .main-menu {
+        display: flex;
+        flex-direction: row;
+        /* justify-content: space-around; */
+    }
+    .main-menu__item, .sub-menu__item {
+        flex: 1 1 100%;
+        text-align: center;
+        position: relative;
+    }
+    .sub-menu__item:first-of-type {
+        margin-top: 0;
+    }
+    .sub-menu {
+        display: none;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: coral;
+    }
+    .main-menu__item:hover .sub-menu {
+        display: flex;
     }
 }
 
