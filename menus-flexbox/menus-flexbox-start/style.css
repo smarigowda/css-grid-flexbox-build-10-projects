@@ -221,4 +221,38 @@ nav ul a {
     }
 }
 
+/* Social Media Navigation */
 
+.social-menu__list span {
+    display: none;
+}
+
+.social-menu__list {
+    display: flex;
+    /* flex: 1 1 100%; */
+    justify-content: flex-end;
+}
+
+.social-menu__list_item {
+    padding: 5px 10px;
+}
+.social-menu__list_item a::before {
+    font-family: "Font Awesome 5 Brands";
+    font-size: 1.2rem;
+}
+
+.social-menu__list_item a[href*="facebook.com"]::before {
+    content: '\f39e';
+}
+.social-menu__list_item a[href*="twitter.com"]::before {
+    content: '\f099';
+}
+.social-menu__list_item a[href*="youtube.com"]::before {
+    content: '\f167';
+}
+.social-menu__list_item a[href*="instagram.com"]::before {
+    content: '\f16d';
+}
+.social-menu__list_item a[href*="pinterest.com"]::before {
+    content: '\f0d2';
+}
