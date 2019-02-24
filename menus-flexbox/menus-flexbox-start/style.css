@@ -179,6 +179,18 @@ nav ul a {
     margin-top: 1rem;
 }
 
+.main-menu__item:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu__item:hover {
+    background-color: coral;
+}
+
+.sub-menu {
+    display: none;
+}
+
 @media (min-width: 768px) {
     .main-menu {
         display: flex;
@@ -203,6 +215,9 @@ nav ul a {
     }
     .main-menu__item:hover .sub-menu {
         display: flex;
+    }
+    .sub-menu__item:hover {
+        background-color: #1a2770;
     }
 }
 
