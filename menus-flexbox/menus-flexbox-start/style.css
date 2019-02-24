@@ -256,3 +256,51 @@ nav ul a {
 .social-menu__list_item a[href*="pinterest.com"]::before {
     content: '\f0d2';
 }
+
+.drop-down-with-social-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #3F51B5;
+}
+.drop-down-with-social-menu ul.main-menu li {
+    flex: 1 0 auto;
+}
+
+.drop-down-with-social-menu .social-menu {
+    order: -1;
+    flex: 0 0 100%;
+}
+.drop-down-with-social-menu .social-menu ul {
+    justify-content: center;
+}
+.drop-down-with-social-menu .dropdown {
+    flex: 0 0 100%;
+}
+
+@media (min-width: 768px) {
+    .drop-down-with-social-menu {
+        display: flex;
+        flex-wrap: no-wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #3F51B5;
+    }
+    .drop-down-with-social-menu ul.main-menu li {
+        flex: 1 0 auto;
+    }
+    .drop-down-with-social-menu .social-menu {
+        order: unset;
+        flex: 1 0 auto;
+    }
+    .drop-down-with-social-menu .dropdown {
+        flex: 0 0 auto;
+    }
+    .drop-down-with-social-menu .social-menu ul {
+        justify-content: flex-end;
+    }
+    .drop-down-with-social-menu .social-menu ul li:last-of-type {
+        margin-right: 20px;
+    }
+}
