@@ -63,3 +63,12 @@ img {
         flex: 0 1 calc(33% - 1rem);
     }
 }
+
+
+.hero {
+    background-image: url(../img/hero.jpg);
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
