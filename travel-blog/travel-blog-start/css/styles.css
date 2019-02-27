@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    font-family: 'Lora', serif;
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -20,7 +21,7 @@ h2 {
     font-size: 1.6rem;
 }
 h3 {
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Lora', serif;
     margin:0;
     font-weight: 700;
 }
@@ -62,7 +63,6 @@ img {
     }
     .entry {
         flex: 0 1 calc(50% - 1rem);
-
     }
 }
 
@@ -79,19 +79,84 @@ img {
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    align-items: flex-end;
 }
 
 .navbar {
+    display: flex;
+    flex-direction: column; /* mobile */
+    align-items: center;
+    width: 100%;
     background-color: #008fd1;
     padding: 1rem 0;
     position: absolute;
     top: 1rem;
 }
 
+@media (min-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .header-text {
+        font-size: 2rem;
+    }
+    .hero {
+        align-items: center;
+    }
+}
+ 
 .header {
     position: relative;
 }
 
 .header-text h1 {
     margin: 0;
+}
+
+.nav__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav__logo {
+    margin-bottom: 1rem;
+}
+.nav__link {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .nav__links {
+        display: flex;
+        flex-direction: row;
+    }
+    .nav__link {
+        margin-right: 1rem;
+        margin-bottom: 0;
+        font-size: 1.3rem;
+    }
+}
+
+.nav__link {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.header-text .container {
+    text-transform: uppercase;
+    /* width: 20rem; */
+}
+
+.header-text {
+    flex: 1 0 100%;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
 }
