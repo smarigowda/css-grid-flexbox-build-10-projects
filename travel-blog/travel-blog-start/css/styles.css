@@ -1,3 +1,11 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
 body {
     box-sizing: border-box;
     background-color: #f2f2f2;
@@ -71,4 +79,19 @@ img {
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
+}
+
+.navbar {
+    background-color: #008fd1;
+    padding: 1rem 0;
+    position: absolute;
+    top: 1rem;
+}
+
+.header {
+    position: relative;
+}
+
+.header-text h1 {
+    margin: 0;
 }
