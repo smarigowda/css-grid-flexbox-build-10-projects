@@ -94,6 +94,14 @@ img {
     top: 1rem;
 }
 
+.header-text {
+    display: none;
+    flex: 1 0 100%;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
+
 @media (min-width: 768px) {
     .navbar {
         flex-direction: row;
@@ -101,6 +109,7 @@ img {
         align-items: center;
     }
     .header-text {
+        display: block;
         font-size: 2rem;
     }
     .hero {
@@ -154,9 +163,50 @@ img {
     /* width: 20rem; */
 }
 
-.header-text {
-    flex: 1 0 100%;
-    text-align: center;
-    font-size: 2rem;
+/* Categories */
+
+.categories ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.categories ul li {
+    padding: 2rem;
+    flex: 0 0 50%;
+}
+
+@media(min-width: 768px) {
+    .categories ul li {
+        flex: 0 0 25%;
+
+    }
+}
+
+.categories ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
     color: white;
+    text-transform: uppercase;
+}
+
+.categories ul li a i {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.categories ul li:nth-child(1) {
+    background-color: #008fd1;
+}
+.categories ul li:nth-child(2) {
+    background-color: #db008d;
+}
+.categories ul li:nth-child(3) {
+    background-color: #9800d1;
+}
+.categories ul li:nth-child(4) {
+    background-color: #eca300;
 }
