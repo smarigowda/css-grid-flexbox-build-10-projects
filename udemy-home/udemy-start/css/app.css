@@ -1,8 +1,15 @@
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: red;
 }
 
 h1 {
   color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
