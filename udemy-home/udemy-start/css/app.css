@@ -1,15 +1,13 @@
-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: red;
+html {
+  box-sizing: border-box;
 }
 
-h1 {
-  color: red;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Raleway", serif;
 }

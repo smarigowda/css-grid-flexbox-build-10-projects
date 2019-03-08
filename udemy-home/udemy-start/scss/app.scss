@@ -1,10 +1,16 @@
-$color: red;
-body {
-    display: flex;
-    background-color: $color;
+@import 'variables';
+@import 'mixins';
+
+html {
+    @include box-sizing(border-box)
 }
-h1 {
-    color: $color;
-    display: flex;
-    transition: all .3s ease;
+
+*,
+*:before,
+*:after {
+    @include box-sizing(inherit);
+}
+
+body {
+    font-family: $mainFont;
 }
