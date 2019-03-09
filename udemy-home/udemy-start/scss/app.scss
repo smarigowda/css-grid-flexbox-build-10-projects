@@ -33,6 +33,13 @@ body {
         padding: 1rem;
         right: 0;
         display: block;
+
+        .button {
+            @include button($secondary);
+        }
+        #cart-list img {
+            width: 200px;
+        }
     }
 }
 
