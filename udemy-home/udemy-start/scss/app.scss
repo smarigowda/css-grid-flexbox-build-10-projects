@@ -89,3 +89,25 @@ body {
         }
     }
 }
+
+.bar {
+    min-height: 5rem;
+    background-color: $secondary;
+    color: $white;
+    @include gradient($secondary, $alternative);
+
+    .icons {
+        display: flex;
+        flex-direction: column;
+
+        @include desktop {
+            flex-direction: row;
+        }
+
+        .icon {
+            @include desktop {
+                flex: 0 0 33.33%;
+            }
+        }
+    }
+}
