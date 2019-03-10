@@ -27,19 +27,24 @@ body {
 
 .cart-content {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &:hover .content {
         position: absolute;
         max-width: 400px;
         padding: 1rem;
         right: 0;
+        top: 100%;
         display: block;
 
         .button {
             @include button($secondary);
         }
-        #cart-list img {
-            width: 200px;
-        }
+    }
+    .img-cart {
+        width: 70%;
+        height: 70%;
     }
 }
 
