@@ -99,6 +99,7 @@ body {
     .icons {
         display: flex;
         flex-direction: column;
+        padding: 1.4rem 0;
 
         @include desktop {
             flex-direction: row;
@@ -107,6 +108,15 @@ body {
         .icon {
             @include desktop {
                 flex: 0 0 33.33%;
+            }
+            &.icon1 {
+                @include bg-icon(icon1);
+            }
+            &.icon2 {
+                @include bg-icon(icon2);
+            }
+            &.icon3 {
+                @include bg-icon(icon3);
             }
         }
     }
