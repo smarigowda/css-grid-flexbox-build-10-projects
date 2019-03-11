@@ -15,6 +15,10 @@ body {
     font-family: $mainFont;
 }
 
+img {
+    max-width: 100%;
+}
+
 .header {
     display: flex;
     padding: 1rem 0;
@@ -46,7 +50,7 @@ body {
         width: 70%;
         height: 70%;
     }
-}
+} 
 
 .container {
     max-width: 1100px;
@@ -123,6 +127,46 @@ body {
             &.icon3 {
                 @include bg-icon(icon3);
             }
+        }
+    }
+}
+
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 5rem;
+    .course {
+        flex: 0 0 calc(50% - 1rem); // phone
+        @include tablet {
+            flex: 0 0 calc(33.33% - 1rem);
+        }
+        @include desktop {
+            flex: 0 0 calc(25% - 1rem);
+        }
+        background-color: $white;
+        margin-bottom: 1rem;
+        border: 1px solid darken($gray, 5%);
+    }
+    .course-info {
+        padding: 1rem;
+        h4 {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+        .price {
+            display: flex;
+            justify-content: space-between;
+            .regular {
+                text-decoration: line-through;
+            }
+            .offer {
+                font-size: 1.2rem;
+                font-weight: 700;
+            }
+        }
+        .button {
+            @include button($primary);
         }
     }
 }
