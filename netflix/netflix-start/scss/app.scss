@@ -9,3 +9,31 @@ html {
 *:before {
   @include box-sizing(inherit);
 }
+
+body {
+  background-color: $black;
+  color: $gray2;
+  font-family: $main_font;
+  height: 100vh;  
+  @include tablet {
+    background-color: unset;
+    @include bg-image('background-netflix-4.jpg');
+  }
+}
+
+a {
+  color: $gray2;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.site-header img {
+  margin-top: .5rem;
+  max-width: 100px;
+  @include tablet {
+    max-width: 150px;
+    margin-left: 2rem;
+  }
+}
