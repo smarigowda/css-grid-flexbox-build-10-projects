@@ -19,7 +19,6 @@
 }
 @mixin button ($color) {
     background-color: $color;
-    padding: .5rem 1rem;
     display: block;
     text-align: center;
     color: $white;
@@ -29,6 +28,11 @@
     border-radius: 5px;
     font-size: .8rem;
     padding: 1rem 0;
+    transition: background-color .3s ease-in-out;
+    &:hover {
+        background-color: darken($color, 10%);
+        cursor: pointer;
+    }
 }
 
 @mixin box-sizing($box-model) {
