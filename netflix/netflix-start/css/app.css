@@ -77,6 +77,9 @@ form .field label {
   top: 1.1rem;
   left: 1rem;
   position: absolute;
+  font-size: .9rem;
+  -webkit-transition: font-size .2s ease, top .2s ease;
+  transition: font-size .2s ease, top .2s ease;
 }
 
 form .field input {
@@ -84,6 +87,18 @@ form .field input {
   -ms-flex: 1;
   flex: 1;
   padding: 1.3rem 1rem .7rem 1rem;
+  background-color: #323232;
+  border: none;
+  border-radius: 5px;
+}
+
+form .field input:focus {
+  background-color: #454545;
+}
+
+form .field input:focus + label {
+  font-size: .7rem;
+  top: .5rem;
 }
 
 form .field span {

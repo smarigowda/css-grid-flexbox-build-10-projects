@@ -64,11 +64,24 @@ form {
       top: 1.1rem;
       left: 1rem;
       position: absolute;
+      font-size: .9rem;
+      transition: font-size .2s ease, top .2s ease;
     }
 
     input {
       flex: 1;
       padding: 1.3rem 1rem .7rem 1rem;
+      background-color: $gray;
+      border: none;
+      border-radius: 5px;
+
+      &:focus {
+        background-color: $gray3;
+        + label {
+          font-size: .7rem;
+          top: .5rem;
+        }
+      }
     }
 
     span {
