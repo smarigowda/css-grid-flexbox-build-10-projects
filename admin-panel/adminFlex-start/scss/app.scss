@@ -15,10 +15,6 @@ body {
   min-height: 100%;
 }
 
-img {
-  width: 100px;
-}
-
 .app {
   display: flex;
   flex-direction: column;
@@ -93,4 +89,49 @@ img {
       }
     }
   }
+}
+
+.main-content {
+  display: flex;
+  height: 100vh;
+  .sidebar {
+    background-color: $darkGray;
+    padding: 1rem 2rem;
+    flex: 0 0 5rem;
+    @include tablet {
+      flex: 0 0 20rem;
+    }
+    color: $white;
+    .user {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      img {
+        width: 60px;
+      }
+      span {
+        display: flex;
+        font-weight: 700;
+      }
+    }
+    .search {
+      display: flex;
+      margin-top: 1rem;
+      justify-content: center;
+      input {
+        height: 3rem;
+        width: 100%;
+        border-radius: 10px;
+        padding-left: 1rem;
+        border: none;
+      }
+    }
+  }
+  .content {
+    flex: 1;
+  }
+}
+
+a {
+  color: $white;
 }
