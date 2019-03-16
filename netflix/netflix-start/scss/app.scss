@@ -47,7 +47,7 @@ a {
     background-color: rgba(0,0,0,.75);
     max-width: 450px;
     margin: 3rem auto 4rem auto;
-    padding: 2rem 4rem;
+    padding: 2rem 3rem;
     border-radius: 5px;
   }
 }
@@ -57,11 +57,13 @@ form {
     color: $white;
     font-size: 1.8rem;
     font-weight: bold;
-    margin: 2rem 0;
+    margin: 1rem 0;
   }
   .field {
     display: flex;
-    margin-bottom: 1rem;
+    &:not(:first-of-type) {
+      margin-top: 1rem;
+    }
     position: relative;
 
     label {
@@ -102,10 +104,15 @@ form {
     display: flex;
     justify-content: space-between;
     padding: .5rem 0;
-    margin-bottom: 9rem;
+    margin-bottom: 5rem;
     a, label {
       font-size: .8rem;
     }
+  }
+  .alert {
+    text-align: center;
+    font-size: .8rem;
+    margin-top: .5rem;
   }
 } /* end .form */
 
@@ -123,5 +130,51 @@ form {
       color: $white;
       margin-left: .5rem;
     }
+  }
+}
+
+.site-footer {
+  border-top: 1px solid $gray2;
+  padding: 2rem 0 4rem 0;
+  @include tablet {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    border-top: unset;
+    padding: 1rem 0 1rem 0;
+    background-color: rgba(0,0,0,.75);
+  }
+  .container {
+    max-width: 60%;
+  }
+  .menu-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    a:not(:last-of-type) {
+        margin-bottom: 1rem;
+        @include tablet {
+          margin-bottom: 0;
+        }
+    }
+    a {
+      font-size: .8rem;
+    }
+    @include tablet {
+      max-width: 70%;
+      flex-direction: row;
+    }
+    padding: .5rem 0 1rem 0;
+  }
+  select {
+    appearance: none;
+    padding: .5rem 2rem;
+    color: $gray2;
+    background-color: $black;
+    border-color: $gray3;
+    font-size: .8rem;
+  }
+
+  .help {
+    font-size: .8rem;
   }
 }

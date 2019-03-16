@@ -58,7 +58,7 @@ a:hover {
     background-color: rgba(0, 0, 0, 0.75);
     max-width: 450px;
     margin: 3rem auto 4rem auto;
-    padding: 2rem 4rem;
+    padding: 2rem 3rem;
     border-radius: 5px;
   }
 }
@@ -71,15 +71,18 @@ form legend {
   color: #FFFFFF;
   font-size: 1.8rem;
   font-weight: bold;
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 form .field {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 1rem;
   position: relative;
+}
+
+form .field:not(:first-of-type) {
+  margin-top: 1rem;
 }
 
 form .field label {
@@ -144,11 +147,17 @@ form .actions {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: .5rem 0;
-  margin-bottom: 9rem;
+  margin-bottom: 5rem;
 }
 
 form .actions a, form .actions label {
   font-size: .8rem;
+}
+
+form .alert {
+  text-align: center;
+  font-size: .8rem;
+  margin-top: .5rem;
 }
 
 /* end .form */
@@ -171,4 +180,76 @@ form .actions a, form .actions label {
 .botton-content .new-user span {
   color: #FFFFFF;
   margin-left: .5rem;
+}
+
+.site-footer {
+  border-top: 1px solid #8c8c8c;
+  padding: 2rem 0 4rem 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .site-footer {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    border-top: unset;
+    padding: 1rem 0 1rem 0;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+}
+
+.site-footer .container {
+  max-width: 60%;
+}
+
+.site-footer .menu-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: .5rem 0 1rem 0;
+}
+
+.site-footer .menu-footer a:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .site-footer .menu-footer a:not(:last-of-type) {
+    margin-bottom: 0;
+  }
+}
+
+.site-footer .menu-footer a {
+  font-size: .8rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .site-footer .menu-footer {
+    max-width: 70%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+.site-footer select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: .5rem 2rem;
+  color: #8c8c8c;
+  background-color: #000000;
+  border-color: #454545;
+  font-size: .8rem;
+}
+
+.site-footer .help {
+  font-size: .8rem;
 }
