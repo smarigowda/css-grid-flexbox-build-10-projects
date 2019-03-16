@@ -1,0 +1,148 @@
+/** Media Queries **/
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  min-height: 100%;
+}
+
+img {
+  width: 100px;
+}
+
+.app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .site-name {
+  background-color: #003f8c;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 5rem;
+  flex: 0 0 5rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .header .site-name {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20rem;
+    flex: 0 0 20rem;
+  }
+}
+
+.header .site-name .mobile {
+  display: block;
+  color: #FFFFFF;
+  padding: 0 1rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .header .site-name .mobile {
+    display: none;
+  }
+}
+
+.header .site-name .desktop {
+  display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  .header .site-name .desktop {
+    display: block;
+    padding: 0 2rem;
+    text-align: center;
+    color: #FFFFFF;
+  }
+}
+
+.header .bar {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: #005b9f;
+  color: #FFFFFF;
+}
+
+.header .bar .right-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .bar .right-content .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.header .bar .right-content .box:hover {
+  background-color: #003f8c;
+}
+
+.header .bar .right-content i {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.header .bar .right-content a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.header .bar .right-content a span {
+  margin-left: .5rem;
+  background-color: #009045;
+  padding: .5rem;
+  border-radius: 50%;
+}
+
+.header .bar .left-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.header .bar .left-content .fa-arrow-right {
+  display: none;
+}
