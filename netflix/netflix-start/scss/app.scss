@@ -78,6 +78,7 @@ form {
       flex: 1;
       padding: 1.3rem 1rem .7rem 1rem;
       background-color: $gray;
+      color: $white;
       border: none;
       border-radius: 5px;
 
@@ -113,6 +114,7 @@ form {
     text-align: center;
     font-size: .8rem;
     margin-top: .5rem;
+    color: $secondary;
   }
 } /* end .form */
 
