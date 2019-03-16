@@ -9,6 +9,12 @@ const validateInput = event => {
         classes = states[0];
     }
 
+    // add a class to label
+    // valid or invalid
+    // so that, when class is valid, we can position the label at the top
+    event.target.nextElementSibling.classList.remove(...states);
+    event.target.nextElementSibling.classList.add(classes);
+
     // add alert
     if (classes === 'invalid') {
         const errorDiv = document.createElement('div');
@@ -21,7 +27,7 @@ const validateInput = event => {
             form.insertBefore(errorDiv, nextElementSibling);
         }
     }
-    
+
     // remove alert
     if (classes === 'valid') {
         if(event.target.parentElement.nextElementSibling.classList.value === 'alert') {

@@ -94,6 +94,11 @@ form .field label {
   transition: font-size .2s ease, top .2s ease;
 }
 
+form .field label.valid {
+  font-size: .7rem;
+  top: .5rem;
+}
+
 form .field input {
   -webkit-box-flex: 1;
   -ms-flex: 1;

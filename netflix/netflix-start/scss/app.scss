@@ -72,6 +72,10 @@ form {
       position: absolute;
       font-size: .9rem;
       transition: font-size .2s ease, top .2s ease;
+      &.valid {
+        font-size: .7rem;
+        top: .5rem;
+      }
     }
 
     input {
