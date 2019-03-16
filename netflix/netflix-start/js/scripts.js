@@ -41,3 +41,16 @@ inputs.forEach(input => {
     input.addEventListener('input', validateInput)
 });
 
+
+// show or hide password
+const togglePassword = document.querySelector('.toggle-password');
+const passwordInput = document.querySelector('#password');
+togglePassword.addEventListener('click', event => {
+    if(event.target.textContent.toUpperCase() === 'SHOW') {
+        event.target.textContent = 'hide';
+        passwordInput.type = 'text';
+    } else {
+        event.target.textContent = 'show';
+        passwordInput.type = 'password';
+    }
+});
