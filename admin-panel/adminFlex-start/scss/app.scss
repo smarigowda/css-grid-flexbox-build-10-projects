@@ -138,10 +138,84 @@ body {
   }
   .content {
     flex: 1;
+    background-color: $gray;
     padding: 1rem;
+    h2 {
+      text-align: center;
+    }
+    .new-client {
+      display: flex;
+      flex-wrap: wrap;
+      flex: 1 1 100%;
+      justify-content: space-between;
+      .field {
+        flex: 0 0 100%;
+        @include tablet {
+          flex: 0 0 50%;
+        }
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        label {
+          flex: 0 0 120px;
+          margin-left: 1rem;
+          margin-right: 1rem;
+          font-weight: bold;
+        }
+        input[type="text"],
+        textarea {
+          flex: 1;
+          border: none;
+          &:focus {
+            outline: none;
+          }
+        }
+        input {
+          height: 2rem;
+          padding-left: .5rem;
+        }
+        textarea {
+          height: 10rem;
+          padding-left: 1rem;
+          padding-top: 1rem;
+        }
+      }
+      .expand {
+        flex: 0 0 100%;
+      }
+      .options {
+        display: flex;
+        align-items: center;
+        flex: 0 0 50%;
+        flex-wrap: wrap;
+        @include tablet {
+          flex: 0 0 100%;
+        }
+      }
+      .submit {
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+        & input {
+          @include button($secondary);
+          line-height: 0;
+          padding: 1.3rem 1.5rem;
+          font-size: 1.2rem;
+          border-radius: 15px;
+          &:focus {
+            outline: none;
+          }
+          &:hover {
+            background-color: $primary;
+          }
+        }
+      }
+      .membership {
+        margin-bottom: 3.5rem;
+      }
+    }
   }
 }
-
 .menu-admin {
   margin-top: 1rem;
   h2 {
