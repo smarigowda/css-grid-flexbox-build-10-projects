@@ -74,6 +74,32 @@ h2 {
     background-color: #e0ab10;
 }
 
+/* fixed footer at the bottom */
+.page {
+    min-height: 100vh;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
 
+.page > * {
+    padding: 0 2rem;
+}
 
+.page .heading {
+    text-align: center;
+    background-color: #CDDC39;
+}
+
+.page .main-content {
+    flex: 1;
+    background-color: #B3DFD8;
+    padding: 0 2rem;
+}
+
+.page .footer {
+    background-color: #212121;
+    color: white;
+}
 
