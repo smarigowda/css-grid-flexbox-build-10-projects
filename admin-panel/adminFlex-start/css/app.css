@@ -26,6 +26,15 @@ body {
   min-height: 100%;
 }
 
+.app .sidebar {
+  -webkit-transition: margin-left .4s ease;
+  transition: margin-left .4s ease;
+}
+
+.app.hide-menu .sidebar {
+  margin-left: -20rem;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -213,6 +222,7 @@ body {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  padding: 1rem;
 }
 
 .menu-admin {

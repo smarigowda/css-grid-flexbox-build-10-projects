@@ -19,6 +19,15 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  .sidebar {
+    transition: margin-left .4s ease;
+  }
+}
+
+.app.hide-menu {
+  .sidebar {
+    margin-left: -20rem;
+  }
 }
 
 .header {
@@ -129,6 +138,7 @@ body {
   }
   .content {
     flex: 1;
+    padding: 1rem;
   }
 }
 
