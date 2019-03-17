@@ -20,6 +20,60 @@ h2 {
     padding: 2rem;
 }
 
+.positions {
+    background-image: url(../img/burguer.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.positions .top {
+    align-self: flex-start;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    background-color: #e0ab10;
+    padding: 1rem;
+}
+
+.positions .top span {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.positions .top p {
+    margin: 0;
+}
+
+.positions .main-content {
+    align-self: center;
+    text-align: center;
+}
+
+.positions .main-content p {
+    margin: 0;
+    color: white;
+}
+
+.positions .main-content .location {
+    font-size: 1.2rem;
+}
+.positions .main-content h1 {
+    margin: 0;
+    color: #e0ab10;
+}
+
+.positions .bottom {
+    align-self: flex-end;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    padding: 1rem 2rem;
+    background-color: #e0ab10;
+}
+
 
 
 
