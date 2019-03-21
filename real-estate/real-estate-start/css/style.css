@@ -1,0 +1,54 @@
+:root {
+    --primary: #7abe47;
+    --light: #ffffff;
+    --gray: #eeeeee;
+    --dark: #333333;
+    --padding: 1rem;
+    --padding2: 1rem;
+    --mainFont: 'PT Serif', serif;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--gray);
+    font-family: var(--mainFont);
+}
+
+/* Global Styles */
+img {
+    max-width: 100%;
+}
+
+p {
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+h1, h2, h3 {
+    margin: 2rem 0;
+}
+h1 {
+    font-size: 2.4rem;
+}
+h2 {
+    font-size: 2.2rem;
+}
+h3 {
+    font-size: 2rem;
+}
+
+.text-center {
+    text-align: center;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 90%;
+}
