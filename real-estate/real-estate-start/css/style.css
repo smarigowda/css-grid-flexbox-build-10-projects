@@ -193,3 +193,32 @@ div .site-name {
         text-align: left;
     }   
 }
+
+.footer {
+    background-color: var(--primary);
+    padding-top: var(--padding2);
+    margin-top: 2rem;
+    color: var(--light);
+}
+
+@media(min-width: 768px) {
+    .footer .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+        grid-column-gap: 2rem;
+    }
+}
+
+.footer .navigation {
+    display: grid;
+    grid-row-gap: 1rem;
+    justify-content: center;
+}
+
+.footer .navigation a {
+    text-decoration: none;
+}
+
+.nav-heading {
+    text-align: center;
+}
