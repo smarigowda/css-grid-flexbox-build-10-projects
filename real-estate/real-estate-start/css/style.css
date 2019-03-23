@@ -222,3 +222,28 @@ div .site-name {
 .nav-heading {
     text-align: center;
 }
+
+.properties-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(2, auto);
+    grid-row-gap: .5rem;
+}
+
+.properties-container .property-info {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.properties-container .property-info p {
+    text-align: center;
+}
+
+.properties-container p {
+    margin: 0;
+}
+
+.widget h3 {
+    text-align: center;
+}
