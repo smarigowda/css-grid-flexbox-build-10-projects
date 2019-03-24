@@ -53,3 +53,24 @@ p {
     margin: 0;
     text-align: center;
 }
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 3rem;
+}
+.service {
+    text-align: center;
+    padding-top: 3rem;
+}
+.service h2::after {
+    height: .4rem;
+    width: 7rem;
+    display: block;
+    content: '';
+    background-color: var(--primary);
+    margin: .5rem auto 0 auto;
+}
+.service i {
+    font-size: 3rem;
+    color: var(--secondary);
+}
