@@ -34,3 +34,22 @@ p {
     font-size: 1.2rem;  
     line-height: 2rem;
 }
+
+.hero {
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+}
+.hero .container {
+    display: grid;
+    grid-row-gap: .8rem;
+    justify-content: center;
+    color: var(--light);
+}
+.hero .container > * {
+    margin: 0;
+    text-align: center;
+}
