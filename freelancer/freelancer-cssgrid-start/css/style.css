@@ -85,11 +85,27 @@ p {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
-
 .footer .container .widget {
     text-align: center;
 }
-
 .portfolio-container h2 {
     text-align: center;
+}
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+    grid-auto-rows: auto;
+}
+.item:nth-child(3) {
+    grid-row-end: span 2;
+}
+
+.portfolio h3::after {
+    height: .4rem;
+    width: 3rem;
+    display: block;
+    content: '';
+    background-color: var(--primary);
+    margin-top: .5rem;
 }
