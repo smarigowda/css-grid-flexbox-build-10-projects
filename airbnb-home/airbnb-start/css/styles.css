@@ -28,3 +28,36 @@ h3 {
 img {
     max-width: 100%;
 }
+
+.hero {
+    height: 100vh;
+    background-image: url(../img/bg.jpg);
+    background-position: bottom center;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 150px auto;
+}
+.header {
+    display: grid;
+    grid-template-columns: 10% auto 30%;
+    padding: 1rem;
+    align-items: flex-start;
+}
+
+@media(min-width:768px) {
+    .main-nav {
+        grid-column: 3/4;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+    .main-nav a {
+        font-size: .8rem;
+        color: var(--light);
+        text-decoration: none;
+        text-align: center;
+        padding: 1rem 1rem 2rem 1rem;
+    }
+    .main-nav a:hover {
+        border-bottom: 1px solid var(--light);
+    }
+}
