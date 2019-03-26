@@ -44,6 +44,9 @@ img {
     align-items: flex-start;
 }
 
+.main-nav {
+    display: none;
+}
 @media(min-width:768px) {
     .main-nav {
         grid-column: 3/4;
