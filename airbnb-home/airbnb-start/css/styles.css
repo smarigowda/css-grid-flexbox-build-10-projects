@@ -1,0 +1,30 @@
+:root {
+    --mainFont:  'Lato', sans-serif; 
+    --primary: rgb(255, 90, 95);
+    --dark: #484848;
+    --light: #ffffff;
+}
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--mainFont);
+}
+h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--dark);
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.8rem;
+}
+img {
+    max-width: 100%;
+}
