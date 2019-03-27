@@ -145,6 +145,19 @@ img {
 .submit-button:focus {
     outline: none;
 }
+.card .category {
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 700;
+}
+.card .title {
+    font-size: 1.6rem;
+    font-weight: 900;
+    margin: 0;
+}
+.card .price {
+    font-size: .9rem;
+}
 main > section {
     margin-bottom: 2rem;
 }
@@ -174,4 +187,13 @@ main > section {
     color: var(--light);
     text-align: center;
     width: 100%;
+}
+.concert {
+    color: #DA595c;
+}
+.class {
+    color: #598DDA;
+}
+.outdoor-activity {
+    color: #940AD4;
 }
