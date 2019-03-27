@@ -145,3 +145,33 @@ img {
 .submit-button:focus {
     outline: none;
 }
+main > section {
+    margin-bottom: 2rem;
+}
+.cards-container {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.card img {
+    width: 100%;
+}
+.card .title {
+    font-size: 1.6rem;
+    font-weight: 900;
+    margin: 0;
+}
+.card .price {
+    font-size: .9rem;
+}
+.countries .card {
+    position: relative;
+}
+.countries .info {
+    position: absolute;
+    left: 0;
+    bottom: 1rem;
+    color: var(--light);
+    text-align: center;
+    width: 100%;
+}
