@@ -236,3 +236,31 @@ main > section {
     color: var(--light);
     border-radius: 5px;
 }
+
+.social-nav a span {
+    display: none;
+}
+
+.social-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-nav a {
+    text-decoration: none;
+    margin-right: 1rem;
+}
+.social-nav a::before {
+    font-family: "Font Awesome 5 Brands";
+    color: var(--dark);
+    font-size: 1.8rem;
+}
+.social-nav a[href*="facebook.com"]::before {
+    content: '\f39e';
+}
+.social-nav a[href*="twitter.com"]::before {
+    content: '\f099';
+}
+.social-nav a[href*="instagram.com"]::before {
+    content: '\f16d';
+}
