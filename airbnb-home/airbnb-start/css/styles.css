@@ -200,3 +200,39 @@ main > section {
 .lodgement {
     color: #274154;
 }
+
+/* footer */
+.footer {
+    border-top: 1px solid #dbdbdb;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--light);
+    padding: 3rem 0;
+}
+.footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1rem;
+}
+.nav-footer h3 {
+    font-size: 1.2rem;
+}
+.footer .menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, auto);
+    grid-row-gap: .5rem;
+}
+.footer .menu a{
+    color: var(--dark);
+    text-decoration: none;
+    display: block;
+    font-size: .9rem;
+}
+.nav-footer .menu a .new {
+    background-color: rgb(0, 119, 126);
+    margin-left: .5rem;
+    padding: .2rem .4rem;
+    color: var(--light);
+    border-radius: 5px;
+}
