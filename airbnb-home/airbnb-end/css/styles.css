@@ -226,7 +226,7 @@ main > section {
     background-color: var(--light);
     transition: bottom 0.3s ease-in-out;
 }
-.footer.active {
+.footer .active {
     bottom: 0;
 }
 .footer .container {
